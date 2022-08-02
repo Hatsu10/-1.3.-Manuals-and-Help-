@@ -1,0 +1,20 @@
+
+
+Many Linux programs have built in manuals, also known as man pages. We can use the man command to open up a man page in our terminal window. Generally, each man page will have a name, a synopsis, a description of the command's purpose, and the corresponding options, parameters, or switches.
+For example, we can open the man page for ls with the following command:
+
+man ls
+
+Man pages contain information about user commands, and also documentation regarding system administration commands, programming interfaces, and more. Manuals are categorized by several numbered sections.
+To determine the appropriate manual section, we can perform a keyword search. For example, let's assume we are interested in learning a bit more about the file format of the /etc/passwd file. Typing man passwd at the command-line will show information regarding the passwd command from section 1 of the manual, which is not what we are interested in.
+
+
+man passwd.
+
+
+
+
+man -k passwd
+man -k '^passwd$'
+man 5 passwd
+more -h 
